@@ -1,0 +1,18 @@
+<section id="gigs" class="container">
+    <h1>All DATA SENIOR</h1>
+
+    {{#each insert}} 
+        <div class="gig">
+            <p><span>STUDENT ID : </span>{{StudentID}}</p>
+            <p><span>FIRST NAME : </span>{{FName}}</p>
+            <p><span>LAST NAME : </span>{{LName}}</p>
+            <p><span>SEX : </span>{{Sex}}</p>
+            <p><span>Diploma Degree : </span>{{Degree}}</p>
+            <p><span>Faculty : </span>{{Faculty}}</p>
+            <p><span>Address : </span>{{Address}}</p>
+        </div>
+
+    {{else}}    
+        <p>No insert</p>
+    {{/each}}
+</section>

@@ -1,0 +1,49 @@
+<section id="add" class="container">
+    <div class="form-wrap">
+      <h1>INSERT DATA</h1>
+      <p>insert data senior</p>
+      {{#each errors}}
+        <div class="error">
+          <p>{{text}}</p>
+        </div> 
+      {{/each}}
+      <form action="/insert/add" method="post">
+        <div class="input-group">
+          <label for="StudentID">STUDENT ID</label>
+          <input type="text" name="StudentID" id="StudentID" class="input-box" placeholder="630xxxxx"
+            maxlength="100" value = {{StudentID}}>
+        </div>
+        <div class="input-group">
+          <label for="FName">FIRST NAME</label>
+          <input type="text" name="FName" id="FName" class="input-box" placeholder="FIRST NAME"
+            maxlength="100" value = {{FName}}>
+        </div>
+        <div class="input-group">
+          <label for="LName">LAST NAME</label>
+          <input type="text" name="LName" id="LName" class="input-box" placeholder="LAST NAME"
+            maxlength="100" value = {{LName}}>
+        </div>
+         <div class="input-group">
+          <label for="Sex">SEX</label>
+          <input type="text" name="Sex" id="Sex" class="input-box" placeholder="male, female"
+            maxlength="100" value = {{Sex}}>
+        </div>
+        <div class="input-group">
+          <label for="Degree">Diploma Degree</label>
+          <input type="text" name="Degree" id="Degree" class="input-box" placeholder="Diploma Degree"
+            maxlength="100" value = {{Degree}}>
+        </div>
+        <div class="input-group">
+          <label for="Faculty">Faculty</label>
+          <input type="text" name="Faculty" id="Faculty" class="input-box" placeholder="Faculty of Psychology"
+            maxlength="100" value = {{Faculty}}>
+        </div>
+        <div class="input-group">
+          <label for="Address">Address</label>
+          <textarea name="Address" id="Address" class="input-box" placeholder="Address"
+            rows="10">{{Address}}</textarea>
+        </div>
+        <input type="submit" value="Add" class="btn btn-reverse">
+      </form>
+    </div>
+  </section>
